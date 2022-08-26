@@ -4,12 +4,9 @@
 
 int main()
 {
-  char host[256];
-  char *IP;
-  struct hostent *host_entry;
-  int hostname;
-  hostname = gethostname(host, sizeof(host)); // find the host name
 
-  printf("Hostname: %s\n", hostname);
+  char hostName = gethostname();
+
+  printf("Hostname: %s\n", hostName);
   return 0;
 }
