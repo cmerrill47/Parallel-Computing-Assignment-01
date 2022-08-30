@@ -31,7 +31,7 @@ do
 
 t=($test)
 # correctness
-ANSW=$(./main out ${t[0]} 0 10 ${t[1]} ${t[2]} 2> time)  
+ANSW=$(./main ${t[0]} 0 10 ${t[1]} ${t[2]} 2> time)  
 if ./approx ${ANSW} ${t[3]};
 then
     echo correct 

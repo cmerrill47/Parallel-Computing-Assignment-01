@@ -45,7 +45,7 @@ int main (int argc, char* argv[]) {
     
     clock_t t; // t represents clock ticks which is of type 'clock_t'
     t = clock(); // start clock
-    double r = calc_numerical_integration(atoi(argv[2]), atoi(argv[3]), atoi(argv[4]), atoi(argv[5]), atoi(argv[6]));
+    double r = calc_numerical_integration(atoi(argv[1]), atoi(argv[2]), atoi(argv[3]), atoi(argv[4]), atoi(argv[5]));
     t = clock()-t; // end clock=
     float time_taken = ((double)t)/CLOCKS_PER_SEC; // in seconds; CLOCKS_PER_SEC is the number of clock ticks per second
     fprintf(stdout, "%f", r);
